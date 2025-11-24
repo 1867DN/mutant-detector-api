@@ -67,6 +67,9 @@ jacocoTestReport {
             fileTree(dir: it, exclude: [
                     '**/MutantDetectorApplication.class',
                     '**/config/**',
+                    '**/dto/**',           // Excluir DTOs (solo Lombok)
+                    '**/entity/**',        // Excluir Entity (solo Lombok)
+                    '**/exception/**',     // Excluir excepciones custom
                     '**/*$*' // Excluir clases internas generadas por Lombok
             ])
         }))
