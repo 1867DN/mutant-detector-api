@@ -33,11 +33,11 @@ public class SwaggerConfig {
                                 .url("https://opensource.org/licenses/MIT")))
                 .servers(List.of(
                         new Server()
-                                .url("http://localhost:8080")
-                                .description("Servidor local de desarrollo"),
+                                .url("https://mutant-detector-api-0hlm.onrender.com")
+                                .description("Servidor de producción (Render)"),
                         new Server()
-                                .url("https://api.example.com")
-                                .description("Servidor de producción")
+                                .url("http://localhost:8080")
+                                .description("Servidor local de desarrollo")
                 ));
     }
 }
